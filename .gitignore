@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+
+/*
+!/.gitignore
+
+!/HW1/
+
+|/ShallowMNIST/
