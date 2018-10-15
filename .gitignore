@@ -6,5 +6,6 @@ __pycache__/
 !/.gitignore
 
 !/HW1/
+!/ANS1/
 
 !/ShallowMNIST/
