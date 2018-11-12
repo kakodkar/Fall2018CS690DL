@@ -270,6 +270,19 @@ class GraphConvolution(nn.Module):
             It should be of shape (#nodes, #embeddings).
 
         """
+        # aggregate neighbor features
+        neighbor_embeds = []
+        for i, node in enumerate(batch):
+            # get neighbors of previous layer
+            neighbors = list(adj_list[node])
+            np.random.shuffle(neighbors)
+            if self.num_samples is not None:
+                neighbors = neighbors[0:self.num_samples]
+            else:
+                pass
+
+            raise NotImplementedError # missing
+        
         raise NotImplementedError # missing
 
 
